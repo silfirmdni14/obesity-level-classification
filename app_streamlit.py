@@ -405,6 +405,7 @@ with tab1:
 
     if predict_clicked:
         # Selectbox — None berarti user belum menyentuhnya sama sekali
+        errors = []
         if gender       is None: errors.append("⚠️ **Jenis Kelamin** belum dipilih.")
         if family_history is None: errors.append("⚠️ **Riwayat Obesitas Keluarga** belum dipilih.")
         if favc         is None: errors.append("⚠️ **Sering Makan Makanan Tinggi Kalori** belum dipilih.")
