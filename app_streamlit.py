@@ -439,7 +439,7 @@ with tab1:
             st.error("🚫 **Harap lengkapi semua field berikut sebelum melakukan prediksi:**")
             for msg in errors:
                 st.warning(msg)
-        st.stop()
+            st.stop()
         data_baru = pd.DataFrame(
             [[gender_model, age, height, weight, family_history_model, favc_model,
               fcvc, ncp, caec_model, ch2o, faf, tue, calc_model, mtrans_model]],
