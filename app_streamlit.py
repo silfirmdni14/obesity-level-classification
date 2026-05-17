@@ -654,9 +654,7 @@ with tab1:
             "Obesity_Type_III":    ["🏥 Intervensi medis sangat dianjurkan, segera temui dokter spesialis","🛋️ Mulai dengan gerakan sederhana dari posisi duduk atau berbaring","🥗 Ikuti program nutrisi ketat yang dipantau tenaga medis","🫂 Cari dukungan psikologis untuk motivasi dan konsistensi","📋 Pertimbangkan program rehabilitasi medis yang terstruktur"],
         }
         saran_list = aktivitas.get(prediksi, [])
-        cols_saran = st.columns(2)
         for i, saran in enumerate(saran_list):
-            with cols_saran[i % 2]:
                 st.markdown(f'<div class="tip-card">{saran}</div>', unsafe_allow_html=True)
 # TAB 2 — INFORMASI
 with tab2:
